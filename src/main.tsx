@@ -14,7 +14,7 @@ import AboutUs from './pages/Chapter3_Training/AboutUs.tsx'
 import Service from './pages/Chapter3_Training/Service.tsx'
 import Works from './pages/Chapter3_Training/Works.tsx'
 import Contact from './pages/Chapter3_Training/Contact.tsx'
-import Chapter4 from './pages/Chapter4.tsx'
+import Chapter4_1 from './pages/Chapter4_1.tsx'
 import Chapter5 from './pages/Chapter5.tsx'
 
 const router = createBrowserRouter([
@@ -69,8 +69,8 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: 'chapters/4',
-        element: <Chapter4 />,
+        path: 'chapters/4_1',
+        element: <Chapter4_1 />,
       },
       {
         path: 'chapters/5',
