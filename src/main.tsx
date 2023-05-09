@@ -6,10 +6,11 @@ import './index.css'
 import Chapter1 from './pages/Chapter1.tsx'
 import Chapter2_1 from './pages/Chapter2_1.tsx'
 import Chapter2_2 from './pages/Chapter2_2.tsx'
-import Chapter3 from './pages/Chapter3.tsx'
+import Chapter2_Training from './pages/Chapter2_Training.tsx'
+import Chapter3_1 from './pages/Chapter3_1.tsx'
+import Chapter3_2 from './pages/Chapter3_2.tsx'
 import Chapter4 from './pages/Chapter4.tsx'
 import Chapter5 from './pages/Chapter5.tsx'
-import Chapter2_Training from './pages/Chapter2_Training.tsx'
 
 const router = createBrowserRouter([
   {
@@ -33,8 +34,12 @@ const router = createBrowserRouter([
         element: <Chapter2_Training />,
       },
       {
-        path: 'chapters/3',
-        element: <Chapter3 />,
+        path: 'chapters/3_1',
+        element: <Chapter3_1 />,
+      },
+      {
+        path: 'chapters/3_2',
+        element: <Chapter3_2 />,
       },
       {
         path: 'chapters/4',
