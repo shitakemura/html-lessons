@@ -79,15 +79,30 @@ function Chapter3_2() {
         </li>
         <li>ボウルに片栗粉を入れ、鶏肉としっかりと絡める</li>
         <li>
-          {/* video: 動画 */}
-          <video controls playsInline poster={fly} width='400' height='400'>
-            <source src={fly_webm} type='video/webm' />
-            <source src={fly_mp4} type='video/mp4' />
-          </video>
+          {/* figure: 本文から切り離せる図や写真 */}
+          <figure>
+            {/* video: 動画 */}
+            <video controls playsInline poster={fly} width='400' height='400'>
+              <source src={fly_webm} type='video/webm' />
+              <source src={fly_mp4} type='video/mp4' />
+            </video>
+            <figcaption>からあげを揚げている様子</figcaption>
+          </figure>
           180℃に熱した油で4〜5分揚げる
         </li>
         <li>お皿に盛り付けて完成</li>
       </ol>
+
+      <h3>ダイジェスト動画(YouTube)</h3>
+      {/* iframe: コンテンツ(PDF、Webサイトなど)埋め込み */}
+      <iframe
+        width='560'
+        height='315'
+        src='https://www.youtube.com/embed/pjbNV7cPrYc'
+        title='YouTube video player'
+        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+        allowFullScreen={true}
+      ></iframe>
 
       <h2 id='faq'>このレシピに関するよくある質問</h2>
       <dl>
