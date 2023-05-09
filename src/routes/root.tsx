@@ -11,7 +11,10 @@ function Root() {
               <a href={`/chapters/1`}>Chapter1</a>
             </li>
             <li>
-              <a href={`/chapters/2`}>Chapter2</a>
+              <a href={`/chapters/2_1`}>Chapter2_1</a>
+            </li>
+            <li>
+              <a href={`/chapters/2_2`}>Chapter2_2</a>
             </li>
             <li>
               <a href={`/chapters/3`}>Chapter3</a>

@@ -1,8 +1,8 @@
-function Chapter2() {
+function Chapter2_1() {
   return (
     <div>
       {/* hn: 見出し */}
-      <h1>Chapter2</h1>
+      <h1>Chapter2_1</h1>
       {/* p: 段落  */}
       <p>架空の絶品料理レシピサイト</p>
 
@@ -70,4 +70,4 @@ function Chapter2() {
   )
 }
 
-export default Chapter2
+export default Chapter2_1
