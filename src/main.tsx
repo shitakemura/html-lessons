@@ -9,6 +9,11 @@ import Chapter2_2 from './pages/Chapter2_2.tsx'
 import Chapter2_Training from './pages/Chapter2_Training.tsx'
 import Chapter3_1 from './pages/Chapter3_1.tsx'
 import Chapter3_2 from './pages/Chapter3_2.tsx'
+import Chapter3_Training from './pages/Chapter3_Training/Chapter3_Training.tsx'
+import AboutUs from './pages/Chapter3_Training/AboutUs.tsx'
+import Service from './pages/Chapter3_Training/Service.tsx'
+import Works from './pages/Chapter3_Training/Works.tsx'
+import Contact from './pages/Chapter3_Training/Contact.tsx'
 import Chapter4 from './pages/Chapter4.tsx'
 import Chapter5 from './pages/Chapter5.tsx'
 
@@ -40,6 +45,28 @@ const router = createBrowserRouter([
       {
         path: 'chapters/3_2',
         element: <Chapter3_2 />,
+      },
+      {
+        path: 'chapters/3_Training',
+        element: <Chapter3_Training />,
+        children: [
+          {
+            path: 'about-us',
+            element: <AboutUs />,
+          },
+          {
+            path: 'service',
+            element: <Service />,
+          },
+          {
+            path: 'works',
+            element: <Works />,
+          },
+          {
+            path: 'contact',
+            element: <Contact />,
+          },
+        ],
       },
       {
         path: 'chapters/4',
