@@ -1,0 +1,137 @@
+function Chapter4_Training() {
+  return (
+    <div>
+      <h1>Recruit</h1>
+
+      <h2>募集内容</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>職種</th>
+            <th>仕事内容</th>
+            <th>応募資格</th>
+            <th>募集人数</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Webディレクター</td>
+            <td>未来を変えるWebサイトのデザイン</td>
+            <td>
+              <ul>
+                <li>Webに関する幅広い知識がある方</li>
+                <li>コミュニケーションが得意な方</li>
+              </ul>
+            </td>
+            <td>2人</td>
+          </tr>
+          <tr>
+            <td>Webデザイナー</td>
+            <td>未来を変えるWebサイトのデザイン</td>
+            <td>
+              <ul>
+                <li>PhotoshopやXD、Figmaなどの操作が出来る方</li>
+                <li>未来を変えるデザインが出来る方</li>
+              </ul>
+            </td>
+            <td>1人</td>
+          </tr>
+          <tr>
+            <td>フロントエンドエンジニア</td>
+            <td>HTML、CSS、JavaScriptなどを用いた開発</td>
+            <td>
+              <ul>
+                <li>HTML、CSS、JavaScriptを使った開発が出来る方</li>
+                <li>新しい技術を積極的に取り入れられる方</li>
+              </ul>
+            </td>
+            <td>2人</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>エントリーフォーム</h2>
+      <form action='' method='post'>
+        <p>
+          <label>
+            お名前（必須項目）
+            <input type='text' name='name' placeholder='架空 太郎' required />
+          </label>
+        </p>
+        <p>
+          <label>
+            フリガナ（必須項目）
+            <input
+              type='text'
+              name='furigana'
+              placeholder='カクウ タロウ'
+              required
+            />
+          </label>
+        </p>
+        <p>
+          <label>
+            メールアドレス（必須項目）
+            <input
+              type='email'
+              name='email'
+              placeholder='taro@example.com'
+              required
+            />
+          </label>
+        </p>
+        <p>
+          <label>
+            電話番号（必須項目）
+            <input
+              type='tel'
+              name='tel'
+              placeholder='000-0000-0000'
+              required
+            />
+          </label>
+        </p>
+        <p>
+          <label>
+            ポートフォリオのURL
+            <input
+              type='url'
+              name='portfolio'
+              placeholder='https://example.com'
+            />
+          </label>
+        </p>
+        <p>
+          希望職種（複数選択可）
+          <label>
+            <input type='checkbox' name='jobs[]' value='Webディレクター' />
+            Webディレクター
+          </label>
+          <label>
+            <input type='checkbox' name='jobs[]' value='Webデザイナー' />
+            Webデザイナー
+          </label>
+          <label>
+            <input
+              type='checkbox'
+              name='jobs[]'
+              value='フロントエンドエンジニア'
+            />
+            フロントエンドエンジニア
+          </label>
+        </p>
+        <p>
+          <label>
+            志望動機(必須項目)
+            <textarea name='motivation' cols={30} rows={10} required />
+          </label>
+        </p>
+        <p>
+          <button>応募する</button>
+        </p>
+      </form>
+    </div>
+  )
+}
+
+export default Chapter4_Training
