@@ -43,6 +43,9 @@ function Root() {
             <li>
               <a href={`/chapters/5_Training`}>Chapter5_Training</a>
             </li>
+            <li>
+              <a href={`/chapters/practice`}>Practice</a>
+            </li>
           </ul>
         </nav>
       </div>
